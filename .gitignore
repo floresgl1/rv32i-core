@@ -1,0 +1,61 @@
+# ---- Verilator ----
+obj_dir/
+*.vcd
+*.fst
+*.fst.hier
+*.verilator
+verilator.log
+
+# ---- Waveforms / sim output ----
+*.wlf
+*.ghw
+*.shm/
+*.trn
+*.dsn
+transcript
+dump.vcd
+
+# ---- Icarus Verilog / other sims ----
+*.vvp
+*.out
+
+# ---- Yosys / nextpnr / Gowin (FPGA stage) ----
+# Scoped to fpga/ so a stray *.json config elsewhere stays tracked
+fpga/**/*.json
+*.blif
+*.edif
+*.asc
+*.bit
+*.fs
+*.pack
+*.rpt
+synth/
+build/
+impl/
+
+# ---- RISC-V toolchain / software build (sw/) ----
+*.o
+*.a
+*.d
+*.elf
+*.bin
+*.map
+*.lst
+*.dis
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Python (test harnesses, cocotb, scripts) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
