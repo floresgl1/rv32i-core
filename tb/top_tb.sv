@@ -4,6 +4,10 @@ module top_tb;
 
     always #5 clk = ~clk;
 
+
+    logic clk, rst_n;
+
+    always #5 clk = ~clk;
     top u_top (
         .clk(clk),
         .rst_n(rst_n)
@@ -16,6 +20,15 @@ module top_tb;
         repeat(10) @(posedge clk);
         $display("PASS");
         $finish;
+    end
+
+endmodule
+    initial begin
+    clk = 0;
+    rst_n = 0;
+    #20 rst_n = 1;
+    repeat(10) @(posedge clk);
+    $display("PASS"); $finish;
     end
 
 endmodule
