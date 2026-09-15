@@ -1,3 +1,4 @@
 title: "Building a CPU from Scratch"
 description: "A pipelined RISC-V RV32I core in SystemVerilog — documented stage by stage"
 theme: minima
+baseurl: "/rv32i-core"
