@@ -36,6 +36,18 @@ The owner is building this to learn CPU architecture from the ground up.
   before moving on.
 - Every stage produces a **blog post**. Don't skip the writing.
 
+## Knowledge checks
+
+Before clearing any stage gate, quiz the owner on the key concepts from
+that stage. The quiz must:
+
+- Cover the hardware concepts, design decisions, and "why" behind the
+  implementation — not just syntax or trivia
+- Require at least 90% to pass
+- If the owner fails, generate a new quiz with different questions
+  before allowing another attempt
+- No moving to the next stage until the quiz is passed
+
 ## Directory conventions
 
 ```
