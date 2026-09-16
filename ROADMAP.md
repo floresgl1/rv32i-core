@@ -37,33 +37,33 @@
 
 ### Checklist
 
-- [ ] Install Verilator on your machine (`sudo apt install verilator`
+- [x] Install Verilator on your machine (`sudo apt install verilator`
       or `brew install verilator`)
-- [ ] Install RISC-V GNU toolchain (for assembling test programs later)
-- [ ] Create `sim/Makefile` with `lint`, `sim`, and `clean` targets
-- [ ] Write a trivial SV module (`rtl/top.sv` — empty module with clock
+- [x] Install RISC-V GNU toolchain (for assembling test programs later)
+- [x] Create `sim/Makefile` with `lint`, `sim`, and `clean` targets
+- [x] Write a trivial SV module (`rtl/top.sv` — empty module with clock
       and reset ports)
-- [ ] Write a trivial testbench (`tb/top_tb.sv` — toggles clock, prints
+- [x] Write a trivial testbench (`tb/top_tb.sv` — toggles clock, prints
       "PASS" after 10 cycles)
-- [ ] Verify `make lint` passes on the empty module
-- [ ] Verify `make sim` compiles and prints "PASS"
-- [ ] Set up GitHub Pages (Jekyll `minima` theme, `_posts/` directory)
-- [ ] Write Blog Post 0: "I'm Building a CPU from Scratch"
-    - [ ] Why you're doing this
-    - [ ] What RV32I is (the 40-instruction base integer ISA)
-    - [ ] What tools you'll use and why (all free/open-source)
-    - [ ] What the end goal looks like
-- [ ] Publish blog post and verify it's accessible at a URL
-- [ ] Update repo README with link to the blog
-- [ ] Read Chapter 2 of the RISC-V Unprivileged Spec (~20 pages,
+- [x] Verify `make lint` passes on the empty module
+- [x] Verify `make sim` compiles and prints "PASS"
+- [x] Set up GitHub Pages (Jekyll `minima` theme, `_posts/` directory)
+- [x] Write Blog Post 0: "I'm Building a CPU from Scratch"
+    - [x] Why you're doing this
+    - [x] What RV32I is (the 40-instruction base integer ISA)
+    - [x] What tools you'll use and why (all free/open-source)
+    - [x] What the end goal looks like
+- [x] Publish blog post and verify it's accessible at a URL
+- [x] Update repo README with link to the blog
+- [x] Read Chapter 2 of the RISC-V Unprivileged Spec (~20 pages,
       RV32I base only — skip everything else)
 
 ### Pass/fail gate
 
-- [ ] `make lint` runs without errors on an empty top-level module
-- [ ] `make sim` compiles and runs a trivial testbench (prints "PASS")
-- [ ] Blog post 0 is published and accessible at a URL
-- [ ] Repo README links to the blog
+- [x] `make lint` runs without errors on an empty top-level module
+- [x] `make sim` compiles and runs a trivial testbench (prints "PASS")
+- [x] Blog post 0 is published and accessible at a URL
+- [x] Repo README links to the blog
 
 ### What "done" means
 
