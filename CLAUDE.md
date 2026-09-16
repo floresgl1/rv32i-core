@@ -48,6 +48,7 @@ that stage. The quiz must:
   before allowing another attempt
 - No moving to the next stage until the quiz is passed
 - Create the quiz as a widget on each pass
+- Update ROADMAP checklist after knowledge check is passed.
 
 ## Directory conventions
 
