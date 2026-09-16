@@ -42,7 +42,7 @@ All free, all open-source:
 
 ## Blog
 
-*Coming soon — link will be added here once the GitHub Pages site is live.*
+https://floresgl1.github.io/rv32i-core/
 
 ## License
 
