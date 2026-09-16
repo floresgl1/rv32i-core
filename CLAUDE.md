@@ -47,6 +47,7 @@ that stage. The quiz must:
 - If the owner fails, generate a new quiz with different questions
   before allowing another attempt
 - No moving to the next stage until the quiz is passed
+- Create the quiz as a widget on each pass
 
 ## Directory conventions
 
