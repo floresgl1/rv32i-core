@@ -38,17 +38,34 @@ The owner is building this to learn CPU architecture from the ground up.
 
 ## Knowledge checks
 
-Before clearing any stage gate, quiz the owner on the key concepts from
-that stage. The quiz must:
+A multiple-choice quiz tests recognition, not recall, so it is a
+warm-up, not the gate. Every stage's knowledge check has three parts,
+in order. All three must pass, along with the stage's own gate in
+ROADMAP.md, before moving on. All three cover the hardware concepts,
+design decisions, and "why" behind the implementation, not syntax or
+trivia.
 
-- Cover the hardware concepts, design decisions, and "why" behind the
-  implementation — not just syntax or trivia
-- Require at least 90% to pass
-- If the owner fails, generate a new quiz with different questions
-  before allowing another attempt
-- No moving to the next stage until the quiz is passed
-- Create the quiz as a widget on each pass
-- Update ROADMAP checklist after knowledge check is passed.
+1. **Warm-up quiz.** A quiz widget, at least 90% to pass. If the owner
+   fails, generate a new quiz with different questions before another
+   attempt. For every missed question, the owner explains the correct
+   answer in their own words before moving on.
+2. **Predict, then simulate.** Before running `make sim` or opening a
+   waveform, the owner writes down the expected values: signal values
+   cycle by cycle (PC, instruction word, control signals, register
+   writes) for a short instruction sequence, and the expected PASS/FAIL
+   cases. Then run it and compare. Any mismatch is a gap in the mental
+   model of the hardware: find the wrong assumption before continuing.
+   Don't accept "close enough" on a cycle count or a bit field.
+3. **Explain it out loud.** Open questions with no options to pick from,
+   for example: "trace `addi x1, x0, 5` through the datapath, naming every
+   mux select", or "what's combinational here, what's registered, and
+   why?" Push on anything vague or memorized-sounding until it's
+   explained plainly or admitted unknown. Treat it like a hardware
+   interview deep-dive. It passes when the stage's core "why" questions
+   are answered without prompting.
+
+No moving to the next stage until all three pass. Update the ROADMAP
+checklist once they do.
 
 ## Directory conventions
 
