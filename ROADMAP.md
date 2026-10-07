@@ -114,12 +114,23 @@ CPU logic yet — and that's correct. The infrastructure is the deliverable.
       (R, I, S, B, U, J) and prints decoded fields
 - [ ] All decoded fields match hand-calculated expected values
 - [ ] `make sim STAGE=1` runs clean with zero warnings
+- [ ] Explain-it-out-loud: why the PC resets to the first instruction's
+      address and steps by 4, and which state elements get a reset value
+      and which don't (and why)
 
 ### What you'll need to learn
 
 - RISC-V instruction encoding formats (Table 2.2 in the spec)
 - How `$readmemh` works in Verilator
 - Sign extension — why it matters and how to implement it in hardware
+- Byte addressing: the PC holds a byte address, so what's the address of
+  the first and second instruction, and what would a fetch from PC = 1
+  read?
+- Reset: why the PC must have a known value after reset, and why memory
+  arrays usually don't get one (can you clear a whole RAM in one cycle?
+  what does FPGA block RAM hold at power-up?). This is the hardware
+  reason firmware's `_start` has to zero `.bss` (see rv32i-firmware
+  Stage 0/1).
 
 ---
 
